@@ -27,7 +27,8 @@ elif (path.exists('output/cpp_out') != True):
   system("mkdir output/cpp_out")  
  
 def compile(ext,comp,path,end)  :
-  print(f"\n{CYAN}|--        COMPILING {ext} PROGRAM          --|")
+  print(f"{RED}---------------------------------------------{END}")
+  print(f"{CYAN}|--        COMPILING {ext} PROGRAM          --|")
   t_start = datetime.now()
   system(f"{comp} {file_name} -o output/{path}/{file_name[:end]}.out")
   t_end = datetime.now()
