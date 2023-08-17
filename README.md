@@ -19,12 +19,14 @@ This script simplifies the process of compiling and running C/C++ code, saving y
    ```bash
    git clone https://github.com/dhimanparas20/compileNRun.git
    cd compileNRun
+   ```
 
 3. Run the requirements.sh script to install gcc and g++ compilers:
 
   ```bash
   chmod +x requirements.sh
   ./requirements.sh
+  ```
 
 ## Usage
 
@@ -32,8 +34,10 @@ This script simplifies the process of compiling and running C/C++ code, saving y
 
   ```bash
   python3 run.py -f source_code_file.cpp
+  ```
 Replace source_code_file.cpp with the name of your C++ source code file.
 NOTE: The source_code_file.cpp file and run.py should be in same directory.
+
 
 ## Examples
 
@@ -41,12 +45,14 @@ NOTE: The source_code_file.cpp file and run.py should be in same directory.
 
   ```bash
   python3 run.py -f test.cpp
+  ```
 The script will compile and execute the code, displaying the output in the terminal.
 
 2. To compile and run the test.c file provided in this repository:
 
   ```bash
   python3 run.py -f test.c
+  ```
 The script will compile and execute the code, displaying the output in the terminal.
 
 ## Contributing
