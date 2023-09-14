@@ -5,7 +5,7 @@ import subprocess
 system("clear")
 
 # Create an ArgumentParser object
-parser = argparse.ArgumentParser(description="A simple Script to compiler Cpp/C code and Auto run.")
+parser = argparse.ArgumentParser(description="A simple Script to compiler Cpp/C/java code and Auto run.")
 
 # Define the expected arguments
 parser.add_argument("-f", dest="File_Name", required=True, help="Name of The File to be COmpiled")
@@ -22,8 +22,10 @@ if ".cpp" in fileName:
   fileType = "cpp"
 elif ".c" in fileName:
   fileType = "c"
+elif ".java" in fileName:
+  fileType = "java"  
 else:
-  print("Error! Not a C/C++ File:",fileName)    
+  print("Error! Not a C/C++/java File:",fileName)    
   exit()
 
 result = subprocess.run(["pwd"],shell=True, stdout=subprocess.PIPE, text=True)
@@ -49,9 +51,18 @@ if path.exists(fileLoc):
     if return_code == 0:
       system(f"./{newFileName}")
     else:
-      exit()  
+      exit() 
+
+  elif fileType == "java":
+    newFileName = fileName.split('.')[0]
+    result = subprocess.run([f"javac {fileName}"],shell=True, stdout=subprocess.PIPE, text=True)
+    return_code = result.returncode
+    if return_code == 0:
+      system(f"java {newFileName}")
+    else:
+      exit()     
   else:
-    print("ERROR! Not a C/C++ File:",fileName)  
+    print("ERROR! Not a C/C++/java File:",fileName)  
     exit()
 else:
   print("ERROR! No Such File exists with Name:",fileName)  
