@@ -1,6 +1,6 @@
 # Compile and Run Script
 
-This script simplifies the process of compiling and running C/C++ code, saving you time and effort. Provide a C/C++ source code file, and the script will handle the compilation and execution.
+This script simplifies the process of compiling and running C/C++/java code, saving you time and effort. Provide a C/C++ source code file, and the script will handle the compilation and execution.
 
 ## Table of Contents
 
