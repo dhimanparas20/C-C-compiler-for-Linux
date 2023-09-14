@@ -33,7 +33,7 @@ This script simplifies the process of compiling and running C/C++/java code, sav
 1. Run the run.py script and provide the required arguments to compile and run your C/C++ code.
 
   ```bash
-  python3 run.py -f source_code_file.cpp
+  runf source_code_file.cpp
   ```
 Replace source_code_file.cpp with the name of your C++ source code file.
 NOTE: The source_code_file.cpp file and run.py should be in same directory.
