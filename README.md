@@ -44,14 +44,14 @@ NOTE: The source_code_file.cpp file and run.py should be in same directory.
 1. To compile and run the test.cpp file provided in this repository:
 
   ```bash
-  python3 run.py -f test.cpp
+  runf test.cpp
   ```
 The script will compile and execute the code, displaying the output in the terminal.
 
 2. To compile and run the test.c file provided in this repository:
 
   ```bash
-  python3 run.py -f test.c
+  runf test.c
   ```
 The script will compile and execute the code, displaying the output in the terminal.
 
