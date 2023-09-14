@@ -11,7 +11,6 @@ parser = argparse.ArgumentParser(description="A simple Script to compiler Cpp/C/
 parser.add_argument("-f", dest="File_Name", required=True, help="Name of The File to be COmpiled")
 #parser.add_argument("-t", dest="type", required=False, default="cpp", help="Only if the File is in C then pass <C> parameter")
 
-
 # Parse the command-line arguments
 args = parser.parse_args()
 
@@ -67,3 +66,4 @@ if path.exists(fileLoc):
 else:
   print("ERROR! No Such File exists with Name:",fileName)  
   exit()
+print("\n------------------------------------------------")  
