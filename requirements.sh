@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt-get install gcc g++ openjdk-11-jdk-headless
+sudo apt-get install gcc g++ openjdk-17-jdk-headless
 mkdir ~/bin
 mv run.py ~/bin/
 export PATH="$PATH:$HOME/bin"
